@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | IPL Booking</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <div>
 
             <!-- HOME -->
-            <section>
+           <section class="hero">
                 <h2>Experience The Stadium Energy Live!</h2>
 
                 <p>
@@ -40,12 +41,13 @@
 
                 <a href="#booking">
                     <button>Book Ticket</button>
+                    
                 </a>
             </section>
 
 
             <!-- ABOUT IPL -->
-            <section>
+            <section>   
                 <h2>About IPL 2026</h2>
 
                 <h3>Popular Teams</h3>
@@ -152,6 +154,94 @@
 
 
             <!-- TICKET BOOKING -->
+             <div class="booking-container">
+
+    <section id="booking">
+        <h2>Ticket Booking</h2>
+
+        <form>
+
+            <label for="match">Match:</label>
+            <select id="match" name="match">
+                <option>CSK vs MI</option>
+                <option>RCB vs SRH</option>
+                <option>PBKS vs CSK</option>
+            </select>
+
+            <br><br>
+
+            <label for="stand">Stand Category:</label>
+            <select id="stand" name="stand">
+                <option>General</option>
+                <option>Premium</option>
+                <option>VIP</option>
+            </select>
+
+            <br><br>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1">
+
+            <br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <br><br>
+
+            <button type="submit">Confirm Booking</button>
+
+        </form>
+    </section>
+
+
+    <section>
+        <h2>Booking Summary</h2>
+
+        <table border="1">
+            <tr>
+                <th>Details</th>
+                <th>Information</th>
+            </tr>
+
+            <tr>
+                <td>Selected Match</td>
+                <td>CSK vs MI</td>
+            </tr>
+
+            <tr>
+                <td>Stand Category</td>
+                <td>General</td>
+            </tr>
+
+            <tr>
+                <td>Ticket Price</td>
+                <td>₹1200</td>
+            </tr>
+
+            <tr>
+                <td>Number of Tickets</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>Total Amount</td>
+                <td>₹1200</td>
+            </tr>
+        </table>
+    </section>
+
+</div>
             <section id="booking">
 
                 <h2>Ticket Booking</h2>
@@ -300,6 +390,7 @@
     <footer>
         <p>&copy; 2026 IPL Booking. All rights reserved.</p>
     </footer>
+    <script src="app.js"></script>
 
 </body>
 
