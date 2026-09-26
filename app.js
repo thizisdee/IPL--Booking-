@@ -27,3 +27,9 @@ document.querySelectorAll('#matches a[href]').forEach(function(link) {
         showToast("Opening Ticket Booking...");
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const demo = document.getElementById("demo");
+
+    demo.textContent = "IPL 2026 feature exciting matches between popular teams at major stadiums.";
+});
